@@ -82,19 +82,25 @@ $("#login").on("click", function() {
 
                     });
                     FB.api('/me', {
-                        fields: 'picture'
+                        fields: 'cover',
                     }, function(response) {
-                        localStorage.setItem("profilePicture", response.picture.data.url);
+                        console.log(response)
+                        localStorage.setItem("profilePicture", response.cover.source);
                         LocalStoragePicture = localStorage.getItem("profilePicture")
 
                     });
-                    FB.api('/me', {
-                        fields: 'cover'
-                    }, function(response) {
-                        localStorage.setItem("coverPicture", response.cover.source);
-                        LocalStorageCoverPicture = localStorage.getItem("coverPicture")
 
-                    });
+                    // FB.api('/me', {
+                    //     fields: 'cover',
+                    // }, function(response) {
+                    //     console.log("PHOTOS")
+                    //     console.log(response)
+                    //     localStorage.setItem("coverPicture", response.cover.source);
+                    //     LocalStorageCoverPicture = localStorage.getItem("coverPicture")
+
+                    // });
+
+
                     FB.api('/me', {
                         fields: 'gender'
                     }, function(response) {
@@ -103,8 +109,6 @@ $("#login").on("click", function() {
 
                     });
 
-                    console.log("FIRST NAME", LocalStorageFirstName)
-                    console.log("UID", LocalStorageUID)
 
                     setTimeout(function() {
                         location.reload()
