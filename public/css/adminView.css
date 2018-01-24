@@ -58,7 +58,7 @@
 }
 
 #home-button {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Sedgwick Ave', cursive;
     font-size: 1.5rem;
     color: white;
     margin-left: -16%;
@@ -69,10 +69,10 @@
 }
 
 #dashboard-button {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Sedgwick Ave', cursive;
     font-size: 1.5rem;
     color: white;
-    margin-left: -16%;
+    margin-left: -30%;
     margin-top: 17%;
     z-index: 999;
     position: relative;
