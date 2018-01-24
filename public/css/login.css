@@ -1,5 +1,5 @@
 #login-page {
-    background: url("https://cdn-images-1.medium.com/max/2000/1*YyeGUTmbOhoIGgU0LuwDuw.jpeg") no-repeat center center fixed;
+    /* background: url("https://cdn-images-1.medium.com/max/2000/1*YyeGUTmbOhoIGgU0LuwDuw.jpeg") no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,7 +17,7 @@
     /* font-family: 'Yellowtail', cursive; */
     /* font-family: 'Black Ops One', cursive; */
     /* font-family: 'Quattrocento Sans', sans-serif; */
-    font-family: 'Bungee', cursive;
+    font-family: 'Sedgwick Ave', cursive;
     font-size: 3.5rem;
     line-height: .9em;
     max-width: 6em;
@@ -33,7 +33,7 @@
 .website-title-subtext {
     color: white;
     /* font-family: 'Yellowtail', cursive; */
-    font-family: 'Bungee', cursive;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2rem;
 }
 
@@ -64,12 +64,12 @@
 }
 
 .text-names {
-    color: #DD4F40;
+    color: #28BFB7;
     z-index: 999;
 }
 
 .chore-quote {
-    color: #C6C6C6;
+    color: #505050;
     font-weight: bold;
     font-size: 1.5rem;
     z-index: 999;
