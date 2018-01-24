@@ -1,14 +1,33 @@
 body {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bg-image {
+    background-image: url("/images/dishes.jpg");
+    background-size: cover;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 87%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 87%, 0 0);
 }
 
 h1,
 h2 {
-    font-family: 'Bungee', cursive;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    display: inline-flex;
+}
+
+.btn-link{
+    color: #fff;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
 }
 
 .btn-secondary {
-    background-color: #DD4F40;
+    background-color: #28BFB7;
 }
 
 .animation-target {
@@ -255,4 +274,61 @@ h2 {
         -webkit-transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
         transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     }
+}
+
+.set_1_btn {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 45px;
+	margin-right: 2em;
+	text-align: center;
+	max-width: 160px;
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	width: 100%;
+	border: none;
+}
+.set_1_btn:hover {
+	text-decoration: none;
+}
+.Vbtn-1 {
+	background:transparent;
+	text-align: center;
+	float:left;
+}
+.Vbtn-1 svg {
+	height: 45px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.Vbtn-1 rect {
+	fill: none;
+	stroke: #28BFB7;
+	stroke-width: 3;
+	stroke-dasharray: 422, 0;
+	transition: all 450ms linear 0s;
+}
+.Vbtn-1:hover {
+	background: rgba(225, 51, 45, 0);
+	font-weight: 900;
+	letter-spacing: 1px;
+	transition: all 150ms linear 0s;
+}
+.Vbtn-1:hover rect {
+	stroke-width: 5;
+	stroke-dasharray: 15, 310;
+	stroke-dashoffset: 48;
+	-webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
