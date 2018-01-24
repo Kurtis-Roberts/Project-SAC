@@ -1,11 +1,7 @@
 #header {
     min-height: 300px;
-    font-family: 'Sedgwick Ave', cursive;
-    background:  linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)
-      ),
-      url("https://cdn.freshome.com/wp-content/uploads/2013/06/clean-home-LR.jpg") no-repeat center center fixed; 
+    /* font-family: 'Sedgwick Ave', cursive; */
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://cdn.freshome.com/wp-content/uploads/2013/06/clean-home-LR.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -33,12 +29,14 @@
 #familyPictures {
     background: url("https://www.toptal.com/designers/subtlepatterns/patterns/bgnoise_lg.png");
     min-height: 550px;
+    border: 1px solid lightgray;
 }
 
-.card-header:first-child{
+.card-header:first-child {
     background: url("https://www.toptal.com/designers/subtlepatterns/patterns/bgnoise_lg.png");
     color: white;
-    font-weight:bold;
+    font-weight: bold;
+    text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
 }
 
 .family-image-dashboard {
@@ -54,12 +52,11 @@
     margin-bottom: 10px;
 }
 
-.family-image-dashboard:hover{
-opacity: .6;
-filter: blur(.5px);
-transform: scale(1.1);
-transition: all .2s ease-in-out;
-
+.family-image-dashboard:hover {
+    opacity: .6;
+    filter: blur(.5px);
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
 }
 
 .userValues {
@@ -84,10 +81,10 @@ transition: all .2s ease-in-out;
     font-size: 1.5em;
     padding-left: 80px;
     /* vertical-align: top; */
-    /* color: rgba(0,0,0,0.2); */
+    color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
     -webkit-transition: color 0.3s;
-    transition: color 0.3s;
+    transition: color 0.4s;
 }
 
 label {
@@ -126,26 +123,22 @@ label {
 }
 
 #home-button {
+    font-family: 'Sedgwick Ave', cursive;
     font-size: 1.5rem;
     color: white;
-    margin-left: 3%;
-    margin-top: 3%;
+    margin-left: 25%;
+    margin-top: 17%;
     z-index: 999;
     position: relative;
     text-decoration: none;
-    font-family: 'Sedgwick Ave', cursive;
 }
 
 #home-button:hover {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
 }
 
 #next-steps {
-    background:  linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)
-      ),
-      url("https://cdn.freshome.com/wp-content/uploads/2013/06/clean-home-LR.jpg") no-repeat center center fixed; 
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://cdn.freshome.com/wp-content/uploads/2013/06/clean-home-LR.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -171,7 +164,6 @@ label {
     color: #28BFB7;
     border: 1px solid #28BFB7;
 }
-
 
 .male {
     border-color: white #D3EBF7;
@@ -230,30 +222,31 @@ label {
     margin-top: 30px;
 }
 
-.choreSection{
+.choreSection {
     background: url("https://www.toptal.com/designers/subtlepatterns/patterns/bgnoise_lg.png");
     min-height: 550px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     margin-bottom: -70px;
+    border: 1px solid lightgray;
 }
 
-#current-profile-name{
+#current-profile-name {
     font-size: 2.5rem!important;
     font-weight: bold!important;
+    text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
 }
 
-.profile-name-fix{
+.profile-name-fix {
     z-index: 999;
 }
 
-#header img{
+#header img {
     opacity: .6;
-filter: blur(.5px);
+    filter: blur(.5px);
 }
 
-
-.modal-content{
+.modal-content {
     border-top-right-radius: 15px!important;
     border-top-left-radius: 15px!important;
 }
