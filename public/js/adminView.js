@@ -333,7 +333,7 @@ $("#admin-users").on("click", ".change-points", function() {
 // Reject Button Click Event
 
 $("#chores").on("click", ".reject-button", function() {
-    $(this).parent('div').parent('div').addClass('fadeMe');
+    $(this).parent('div').parent('div').parent('div').parent('div').addClass('fadeMe');
     console.log(this)
     var newStatus = {
         status: "not started"

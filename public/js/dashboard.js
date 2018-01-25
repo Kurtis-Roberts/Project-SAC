@@ -5,6 +5,7 @@ var profilePicture = localStorage.getItem("profilePicture")
 var localStorageFirstName = localStorage.getItem("firstName")
 var localStorageLastName = localStorage.getItem("lastName")
 var FacebookID = localStorage.getItem("uid")
+var userRole = localStorage.getItem("role")
     //###################################################################//
 
 // ALEX YOU'RE AN IDIOT FIX THIS THE RIGHT WAY
@@ -44,6 +45,7 @@ var getNewUser = function(id) {
         var Fbid = data.Fbid
         var role = data.role
         var choresCompleted = data.completed_tasks;
+
         if (choresCompleted > 4) {
             $("#5").removeClass("d-none");
             console.log("I've completed 5 tasks, the badge should be showing!");
@@ -106,6 +108,7 @@ var getNewUser = function(id) {
             }
             // END OF APPENDING CHORES WITH "NOT STARTED" STATUSES
         }
+        localStorage.setItem("role", role)
     });
 }
 
