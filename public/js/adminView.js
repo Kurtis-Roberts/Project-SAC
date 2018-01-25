@@ -333,7 +333,7 @@ $("#admin-users").on("click", ".change-points", function() {
 // Reject Button Click Event
 
 $("#chores").on("click", ".reject-button", function() {
-    $(this).parent('div').parent('div').parent('div').parent('div').addClass('fadeMe');
+    $(this).parent('div').parent('div').parent('div').addClass('fadeMe');
     console.log(this)
     var newStatus = {
         status: "not started"
@@ -367,7 +367,7 @@ var newPoints;
 // Accept Button Click Event
 
 $("#chores").on("click", ".accept-button", function() {
-    $(this).parent('div').parent('div').addClass('fadeMe');
+    $(this).parent('div').parent('div').parent('div').addClass('fadeMe');
     pointValue = $(this).attr("data-points")
     console.log("New Points")
     console.log(pointValue)
