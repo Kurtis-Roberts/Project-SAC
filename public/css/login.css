@@ -38,7 +38,7 @@
 }
 
 #secondary-background {
-    background-color: #CE5848;
+    background-color: #28BFB7;
     -webkit-clip-path: polygon(0 0, 100% 17%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 17%, 100% 100%, 0% 100%);
     position: relative;
@@ -51,8 +51,6 @@
 }
 
 #logout {
-    margin-top: 3%;
-    margin-left: 3%;
 }
 
 .family-image-home {
@@ -105,7 +103,7 @@
     position: relative;
     height: 60px;
     width: 200px;
-    background: #CE5848;
+    background: #28BFB7;
     border-radius: 8px;
     text-align: center;
     cursor: pointer;

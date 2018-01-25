@@ -219,38 +219,31 @@ $(window).scroll(function() {
     // the < 850 here means 'less than 500px'
 
     if ($(this).scrollTop() < 190) {
-        $("#login-page").removeClass("blur1")
+        $("#banner-background-image").removeClass("blur1")
     }
     if ($(this).scrollTop() > 190) {
-        $("#login-page").addClass("blur1")
-    }
-
-    if ($(this).scrollTop() < 230) {
-        $("#login-page").removeClass("blur2")
-    }
-    if ($(this).scrollTop() > 230) {
-        $("#login-page").addClass("blur2")
+        $("#banner-background-image").addClass("blur1")
     }
     if ($(this).scrollTop() < 240) {
-        $("#login-page").removeClass("blur3")
+        $("#banner-background-image").removeClass("blur3")
     }
     if ($(this).scrollTop() > 240) {
-        $("#login-page").addClass("blur3")
+        $("#banner-background-image").addClass("blur3")
     }
 
     if ($(this).scrollTop() < 250) {
-        $("#login-page").removeClass("blur4")
+        $("#banner-background-image").removeClass("blur4")
     }
     if ($(this).scrollTop() > 250) {
-        $("#login-page").addClass("blur4")
+        $("#banner-background-image").addClass("blur4")
     }
 
 
     if ($(this).scrollTop() < 260) {
-        $("#login-page").removeClass("blur5")
+        $("#banner-background-image").removeClass("blur5")
     }
     if ($(this).scrollTop() > 260) {
-        $("#login-page").addClass("blur5")
+        $("#banner-background-image").addClass("blur5")
     }
 
     if ($(this).scrollTop() > 400) {
@@ -320,7 +313,7 @@ $(window).scroll(function() {
 
 $("#join-existing").hide()
 
-$("#joinExisting").on("click", function() {
+$("#joinButton").on("click", function() {
     $("#join-existing").toggle(1000)
 })
 
@@ -405,3 +398,23 @@ $(window).scroll(function() {
 $(window).scroll(function() {
     $("#dashboardButton").css("opacity", 1 - $(window).scrollTop() / 450);
 });
+
+$("#searchButton").on("click", function(){
+    var GUID = $("#joinCode").val()
+        console.log("JOIN CODE IS: ", GUID)
+
+        var updatedUser = {
+            FamilyUuid: GUID
+        };
+
+        console.log(updatedUser)
+
+        $.ajax({
+                method: "PUT",
+                url: "/api/users/" + LocalStorageUID,
+                data: updatedUser
+            })
+            .done(function() {
+                window.location.href = "/dashboard";
+            });
+    });

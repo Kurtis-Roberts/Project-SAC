@@ -135,15 +135,15 @@
   
   #backToHome a {
       color: inherit;
-      color: #CE5848!important;
+      color: #28BFB7!important;
       text-decoration: none;
   }
   
   .title {
-      margin-top: 5px;
-      color: #28BFB7;
-      font-family: 'Sedgwick Ave', cursive;
-      font-size: 2.5rem;
+    margin-top: -25px;
+    color: #28BFB7;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 4.5rem;
       /* text-shadow: -1px -1px 0 #F0F0F0, 1px -1px 0 #F0F0F0, -1px 1px 0 #F0F0F0, 1px 1px 0 #F0F0F0; */
   }
   

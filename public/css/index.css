@@ -7,6 +7,7 @@ body {
     background-size: cover;
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 87%, 0 0);
     clip-path: polygon(50% 0%, 100% 0, 100% 88%, 50% 100%, 0 87%, 0 0);
+    height: 100vh;
 }
 
 h1,
@@ -41,7 +42,23 @@ h2 {
     width: 39px;
     height: 39px;
     border-radius: 3px;
+    background-color: transparent;
+    color: #28BFB7;
+    border: 1px solid #28BFB7;
 }
+
+a:active { 
+    color: #28BFB7;
+}
+
+#searchButton:hover{
+    border: 1px solid white;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 
 /* Generated with Bounce.js. Edit at https://goo.gl/JVb2wN */
